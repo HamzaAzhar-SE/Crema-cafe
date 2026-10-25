@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3B2A20" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F7F1E8" media="(prefers-color-scheme: light)" />
+
+    <title>Crema &amp; Co. — Specialty Cafe, Slow Roasts &amp; Fresh Bakery</title>
+    <meta
+      name="description"
+      content="Crema &amp; Co. is a specialty cafe serving ethically sourced single-origin coffee, cold brew, fresh-baked pastries and all-day breakfast. Order online, reserve a table, or join a latte art workshop."
+    />
+    <meta name="keywords" content="specialty coffee, cafe, cold brew, third wave coffee, brunch, latte art class, coffee shop near me" />
+    <meta name="author" content="Crema & Co." />
+    <link rel="canonical" href="https://cremaandco.cafe/" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Crema & Co." />
+    <meta property="og:title" content="Crema &amp; Co. — Specialty Cafe" />
+    <meta
+      property="og:description"
+      content="Slow roasts, fresh bakery and a room that feels like a good morning. Order ahead or reserve a table."
+    />
+    <meta property="og:url" content="https://cremaandco.cafe/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1442512595331-e89e73826480?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:image:alt" content="A flat white with latte art on a wooden cafe table" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Crema &amp; Co. — Specialty Cafe" />
+    <meta name="twitter:description" content="Slow roasts, fresh bakery and a room that feels like a good morning." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1442512595331-e89e73826480?auto=format&fit=crop&w=1200&q=80" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233B2A20'/%3E%3Cpath d='M8 12h12v6a6 6 0 0 1-12 0z' fill='%23C68B59'/%3E%3Cpath d='M20 13h3a3 3 0 0 1 0 6h-3' stroke='%23C68B59' stroke-width='2' fill='none'/%3E%3Cpath d='M11 6c-1.5 1.5-1.5 3 0 4.5M16 5c-1.5 1.5-1.5 3 0 4.5' stroke='%23F7F1E8' stroke-width='1.6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
+
+    <!-- Typography: Fraunces (display serif) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply the saved theme before first paint to avoid a flash of the wrong palette -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('crema.theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch (error) {
+          /* localStorage unavailable (private mode) - stay on the light palette */
+        }
+      })();
+    </script>
+
+    <!-- Schema.org: local business + menu -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Crema & Co.",
+        "description": "Specialty cafe serving single-origin espresso, cold brew, fresh bakery and all-day breakfast.",
+        "url": "https://cremaandco.cafe/",
+        "telephone": "+1-415-555-0132",
+        "email": "hello@cremaandco.cafe",
+        "servesCuisine": ["Coffee", "Brunch", "Bakery", "Vegan"],
+        "priceRange": "$$",
+        "image": "https://images.unsplash.com/photo-1442512595331-e89e73826480?auto=format&fit=crop&w=1200&q=80",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "218 Alcott Lane",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94117",
+          "addressCountry": "US"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 37.7696, "longitude": -122.4352 },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1284"
+        },
+        "hasMenu": {
+          "@type": "Menu",
+          "name": "Crema & Co. Menu",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Coffee",
+              "hasMenuItem": {
+                "@type": "MenuItem",
+                "name": "Flat White",
+                "offers": { "@type": "Offer", "price": "4.50", "priceCurrency": "USD" }
+              }
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Crema &amp; Co. needs JavaScript enabled to browse the menu and place an order.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
